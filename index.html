@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTA GERAL</title>
+</head>
+<body>
+    <h1> FAZENDO UMA LISTA GERAL</h1>
+
+    <input type="text" id="Item" placeholder="novo Item">
+    <button onclick="adicionarItem()">Adicionar</button>
+    <li id="LISTA GERAL"></li>
+
+    <script>
+        function adicionarItem()
+        {
+            const texto = document.getElementById("Item").value;
+            const novoItem = document.createElement("li");
+            novoItem.textContent = texto;
+            document.getElementById("LISTA GERAL").appendChild(novoItem);
+
+        }
+    </script>
+</body>
+</html>
